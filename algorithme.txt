@@ -1,0 +1,61 @@
+PROJET : Mini-Calculatrice Web
+
+
+1. OBJECTIF DU PROGRAMME
+
+Calculer le resultat d'une operation (+, -, *, /) entre deux chiffres
+saisis par l'utilisateur.
+
+2. LES ENTREES
+
+ chiffre1 : le premier nombre saisi par l'utilisateur
+ chiffre2 : le deuxieme nombre saisi par l'utilisateur
+ operation : l'operation choisie par l'utilisateur (+, -, *, /)
+
+3. LE TRAITEMENT
+Si operation = "+"
+   alors resultat = chiffre1 + chiffre2
+
+Si operation = "-"
+   alors resultat = chiffre1 - chiffre2
+
+Si operation = "*"
+   alors resultat = chiffre1 * chiffre2
+
+Si operation = "/"
+   Si chiffre2 = 0
+      alors resultat = "Impossible de diviser par zero"
+   Sinon
+      alors resultat = chiffre1 / chiffre2
+
+4. LES SORTIES
+ resultat : affiche a l'utilisateur le resultat du calcul,
+  ou le message d'erreur en cas de division par zero.
+
+5. LES VARIABLES UTILISEES
+ chiffre1   (nombre)
+ chiffre2   (nombre)
+ operation  (texte : "+", "-", "*", "/")
+ resultat   (nombre ou texte selon le cas)
+
+6. EXEMPLES D'EXECUTION
+
+Exemple 1 :
+  chiffre1 = 10, chiffre2 = 5, operation = "+"
+  resultat = 15
+
+Exemple 2 :
+  chiffre1 = 10, chiffre2 = 5, operation = "-"
+  resultat = 5
+
+Exemple 3 :
+  chiffre1 = 10, chiffre2 = 5, operation = "*"
+  resultat = 50
+
+Exemple 4 :
+  chiffre1 = 10, chiffre2 = 5, operation = "/"
+  resultat = 2
+
+Exemple 5 :
+  chiffre1 = 10, chiffre2 = 0, operation = "/"
+  resultat = "Impossible de diviser par zero"
